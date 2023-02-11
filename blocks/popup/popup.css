@@ -1,0 +1,23 @@
+.popup {
+    visibility: hidden;
+    position: fixed;
+    display: block;
+    max-width: 430px;
+    top: calc((100vh - 330px) / 2);
+    background: #FFFFFF;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    margin-left: calc((100vw - 430px) / 2);
+    z-index: 3;
+    height: 330px;
+}
+
+@media screen and (max-width: 320px) {
+    .popup {
+        width: 282px;
+        max-height: 322px;
+        padding: 0;
+        margin-left: 0;
+        left: 19px;
+    }
+}
