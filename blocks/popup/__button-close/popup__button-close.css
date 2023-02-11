@@ -4,7 +4,7 @@
     height: 32px;
     background: none;
     visibility: hidden;
-    background-image: url("../../../../images/closeIcon.svg");
+    background-image: url("../../../images/closeIcon.svg");
     background-position:center;
     background-repeat:no-repeat;
     background-size: 32px;
