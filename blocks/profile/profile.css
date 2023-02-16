@@ -6,7 +6,7 @@
     margin: 41px auto 0;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1000px) {
     .profile {
         display: grid;
         grid-template-columns: 282px;

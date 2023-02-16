@@ -10,7 +10,7 @@
     color: #FFFFFF;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1000px) {
     .profile__person-job {
         grid-row: 3;
         grid-column: 1;

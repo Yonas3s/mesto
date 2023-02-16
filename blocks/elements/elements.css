@@ -7,3 +7,24 @@
     column-gap: 17px;
     margin: 51px auto 0;
 }
+
+@media screen and (max-width: 999px) {
+    .elements {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .elements {
+        margin-left: 92px;
+        margin-right: 92px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .elements {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

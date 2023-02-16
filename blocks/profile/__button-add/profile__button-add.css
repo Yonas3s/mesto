@@ -14,7 +14,11 @@
     z-index: 1;
 }
 
-@media screen and (max-width: 500px) {
+.profile__button-add:hover {
+    opacity: 0.6;
+}
+
+@media screen and (max-width: 1000px) {
     .profile__button-add {
         grid-row: 4;
         grid-column: 1;

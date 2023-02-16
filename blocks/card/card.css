@@ -1,13 +1,11 @@
 .card {
     width: 282px;
-    height: 361px;
     border-radius: 10px;
     background-color: aliceblue;
 }
 
 @media screen and (max-width: 500px) {
     .card {
-        width: 282px;
         margin-left: auto;
         margin-right: auto;
     }
