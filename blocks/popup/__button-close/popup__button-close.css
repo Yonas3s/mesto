@@ -7,7 +7,6 @@
     background-image: url("../../../images/closeIcon.svg");
     background-position:center;
     background-repeat:no-repeat;
-    background-size: 32px;
     top: 155px;
     right: calc((100vw / 2) - 270px);
     padding: 0;
@@ -22,7 +21,6 @@
     .popup__button-close {
         width: 20px;
         position: fixed;
-        height: 20px;
         top: 87px;
         right: calc(100vw - 301px);
         background-size: 20px;
