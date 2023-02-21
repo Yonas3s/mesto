@@ -1,7 +1,7 @@
 # Проект: Mesto
 ----------------------------------
 
-Ссылка на Github Pages: https://yonas3s.github.io/mesto/
+Ссылка на Github Pages: https://yonas3s.github.io/me_sto/
 
 **Используемые технологии:**
 1. Языки HTML и CSS
