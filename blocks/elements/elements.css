@@ -12,7 +12,7 @@
     .elements {
         margin-top: 0px;
         max-width: 581px;
-        left: calc((100vw - 29.5px) / 2)
+        left: calc((100vw - 29.5px) / 2);
     }
 }
 
