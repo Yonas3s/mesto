@@ -7,7 +7,7 @@
     background-image: url("../../../images/closeIcon.svg");
     background-position:center;
     background-repeat:no-repeat;
-    top: calc((100vh / 2) - 160px);
+    top: calc((100vh / 2) - 170px);
     right: calc((100vw / 2) - 262px);
     padding: 0;
     z-index: 3;
