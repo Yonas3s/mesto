@@ -5,6 +5,5 @@
 	background: none;
 }
 .popup__btn-form_inactive:hover {
-	cursor: none;
 	opacity: 0.2;
 }
