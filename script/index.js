@@ -138,6 +138,9 @@ function createCard(evt) {
     renderCard(newCard, cardContainer)
     titleInputCard.value = '';
     linkInput.value = '';
+    const popupBtnTypeCreate = document.querySelector('.popup__btn-form_type_create');
+    popupBtnTypeCreate.setAttribute('disabled', "true");
+    popupBtnTypeCreate.classList.add('popup__btn-form_inactive');
     closePopup(popupAdd);
 }
 
