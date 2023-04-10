@@ -55,7 +55,7 @@ const enableValidation = (classSet) => {
 }
 
 const validationClasses = ({
-	activeErrorBorder: '.popup__text-error',
+	activeErrorBorder: 'popup__input_type_error',
 	activeErrorText: 'popup__text-error_active',
 	inactiveClassButton: 'popup__btn-form_inactive',
 	inputSelector: '.popup__input',
