@@ -71,7 +71,7 @@ function openPopupPhoto (card) {
 	scalePhoto.open(card.name, card.link);
 }
 
-function addNewCard (item) {
+function createNewCard (item) {
 	const newCard = new Card(item, '#card-template', openPopupPhoto);
 	const newCardEl = newCard.createCard();
 	return newCardEl;
@@ -81,7 +81,7 @@ const cardContainer = new Section(
 	{
 		items: initialCards,
 		renderer: (item) => {
-			cardContainer.addItem(addNewCard(item));
+			cardContainer.addItem(createNewCard(item));
 		},
 	}, ".elements"
 )
@@ -101,7 +101,7 @@ const popupWithProfile = new PopupWithForm(".popup-profile",
 
 const popupWithCards = new PopupWithForm(".popup-cards", 
 	{handleFormSubmit: (item) => {
-		cardContainer.addItem(addNewCard(item));
+		cardContainer.addItem(createNewCard(item));
 	}}
 );
 
