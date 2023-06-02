@@ -75,7 +75,7 @@ function handleDelete(card) {
 	popupDelete.setSubmitAction(submitConfirm);
 }
 
-function addNewCard (dataCard) {
+function createNewCard (dataCard) {
 	const newCard = new Card(dataCard, '#card-template', userId, openPopupImg, 
 		(cardId) => {
 			api.sendLike(cardId)
@@ -100,7 +100,7 @@ function addNewCard (dataCard) {
 const cardContainer = new Section (
 	{	
 		renderer: (item) => {
-			cardContainer.addItem(addNewCard(item));
+			cardContainer.addItem(createNewCard(item));
 		}
 	}, '.elements'
 )
@@ -144,7 +144,7 @@ const popupNewCard = new PopupWithForm('.popup-cards', {
 		popupNewCard.renderLoading(true);
 		api.sendNewCard(item)
 		.then((item) => {
-			cardContainer.addItem(addNewCard(item));
+			cardContainer.addItem(createNewCard(item));
 			popupNewCard.close();
 		}).catch((err) => {
 			console.log(err);
