@@ -72,7 +72,7 @@ export default class FormValidator {
 	});
 	}
 	
-	cleanupValidation() {
+	resetFormErrorMessages() {
 		this._toggleButton();
 
 		this._inputList.forEach((inputElement) => {
