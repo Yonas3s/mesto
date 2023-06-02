@@ -41,6 +41,12 @@ Promise.all([api.getUserInfo(), api.getInitialCards()])
 	console.log(err);
 })
 
+const userInfo = new UserInfo({
+	nameSelector:'.profile__person-name', 
+	jobSelector: '.profile__person-job',
+	avatarSelector: '.profile__avatar'
+});
+
 function openPopupImg(data) {
 	popupView.open(data.name, data.link);
 }
@@ -89,12 +95,6 @@ const cardContainer = new Section (
 		}
 	}, '.elements'
 )
-
-const userInfo = new UserInfo({
-	nameSelector:'.profile__person-name', 
-	jobSelector: '.profile__person-job',
-	avatarSelector: '.profile__avatar'
-});
 
 const popupView = new PopupWithImage('.popup-view');
 
