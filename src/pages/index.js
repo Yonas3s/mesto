@@ -21,6 +21,15 @@ const editBtn = document.querySelector('.profile__button-edit');
 const addBtn = document.querySelector('.profile__button-add');
 const avatarBtn = document.querySelector('.profile__button-avatar');
 
+const formProfileValidator = new FormValidator(validationClasses, formElementProfile);
+formProfileValidator.enableValidation();
+
+const formCardValidator = new FormValidator(validationClasses, formElementCard);
+formCardValidator.enableValidation();
+
+const formAvatarValidator = new FormValidator(validationClasses, formElementAvatar);
+formAvatarValidator.enableValidation();
+
 let userId;
 
 const api = new Api({
@@ -144,15 +153,6 @@ const popupNewCard = new PopupWithForm('.popup-cards', {
 		})
 	}
 });
-
-const formProfileValidator = new FormValidator(validationClasses, formElementProfile);
-formProfileValidator.enableValidation();
-
-const formCardValidator = new FormValidator(validationClasses, formElementCard);
-formCardValidator.enableValidation();
-
-const formAvatarValidator = new FormValidator(validationClasses, formElementAvatar);
-formAvatarValidator.enableValidation();
 
 avatarBtn.addEventListener('click', function() {
 	popupAvatar.open();
