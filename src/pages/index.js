@@ -154,11 +154,6 @@ const popupNewCard = new PopupWithForm('.popup-cards', {
 	}
 });
 
-avatarBtn.addEventListener('click', function() {
-	popupAvatar.open();
-	formAvatarValidator.cleanupValidation();
-})
-
 editBtn.addEventListener('click', function() {
 	popupProfile.open();
 	
@@ -166,13 +161,18 @@ editBtn.addEventListener('click', function() {
 	nameInput.value = dataUser.name;
 	jobInput.value = dataUser.about;
 
-	formProfileValidator.cleanupValidation();
+	formProfileValidator.resetFormErrorMessages();
 });
 
 addBtn.addEventListener('click', function() {
 	popupNewCard.open();
-	formCardValidator.cleanupValidation();
+	formCardValidator.resetFormErrorMessages();
 });
+
+avatarBtn.addEventListener('click', function() {
+	popupAvatar.open();
+	formAvatarValidator.resetFormErrorMessages();
+})
 
 popupAvatar.setEventListeners();
 popupProfile.setEventListeners();
