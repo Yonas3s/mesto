@@ -12,14 +12,6 @@ export default class Api {
 		return Promise.reject(`Ошибка: ${res.status}`);
 	}
 
-    getInitialCards() {
-        return fetch(`${this._baseUrl}/cards`, {
-          headers: {
-            authorization: this._headers.authorization,
-          },
-        }).then((res) => this._getResponse(res));
-    }
-
 	getUserInfo() {
 		return fetch(`${this._baseUrl}/users/me`, {
 			method: "GET",
@@ -27,6 +19,15 @@ export default class Api {
 		}).then((res) => this._getResponse(res));
 	}
 
+
+    getInitialCards() {
+        return fetch(`${this._baseUrl}/cards`, {
+          headers: {
+            authorization: this._headers.authorization,
+          },
+        }).then((res) => this._getResponse(res));
+    }
+	
 	sendUserData(dataUser) {
 		return fetch(`${this._baseUrl}/users/me`, {
 			method: 'PATCH',
